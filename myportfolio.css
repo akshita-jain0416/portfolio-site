@@ -1,0 +1,299 @@
+/* ===== BASIC RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* ===== BODY ===== */
+  body {
+    background: linear-gradient(to right, #ffffff, #f7de8f);
+    min-height: 100vh;
+  }
+  
+  /* ===== NAVBAR ===== */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6d4300;
+    text-shadow: 0 0 5px #b65d33;
+  }
+  
+  /* ===== NAV LINKS ===== */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    position: relative;
+  }
+  
+  /* underline hover effect */
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #6d4300;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  nav ul li a:hover {
+    color: #6d4300;
+  }
+  
+  /* ===== HOME SECTION ===== */
+  .section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  /* ===== CONTENT ===== */
+  .content {
+    width: 45%;
+  }
+  
+  .content h1 {
+    font-size: 40px;
+  }
+  
+  .content h1 span {
+    color: #6d4300;
+  }
+  
+  .content h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #6d4300;
+  }
+  
+  .content p {
+    margin: 15px 0;
+    font-size: 12px;
+  }
+  
+  /* ===== BUTTON EFFECT ===== */
+  button {
+    padding: 10px 25px;
+    background-color: #6d4300;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: transparent;
+    color: #6d4300;
+    border: 2px solid #6d4300;
+    transform: scale(1.05);
+  }
+  
+  /* ===== IMAGE ===== */
+  .image {
+    width: 30%;
+  }
+  
+  .image img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  
+  /* image zoom effect */
+  .zoom img {
+    transition: 0.4s;
+  }
+  
+  .zoom img:hover {
+    transform: scale(1.08);
+  }
+  
+  /* ===== FADE IN EFFECT ===== */
+  .fade-in {
+    animation: fade 1.5s ease-in;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* === SKILLS === */
+  #skills h2{
+    font-size: 40px;
+    padding: 10px 25px;
+    background-color: #6d4300;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+  }
+
+  #skills h2:hover{
+    background-color: transparent;
+    color: #6d4300;
+    border: 2px solid #6d4300;
+    transform: scale(1.05);
+  }
+
+  .skills {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  
+  .skills li {
+    margin: 10px 0;
+  }
+
+  /* ===== PROJECTS ===== */
+
+  #projects h2{
+    font-size: 40px;
+    padding: 10px 25px;
+    background-color: #6d4300;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+  }
+
+  #projects h2:hover{
+    background-color: transparent;
+    color: #6d4300;
+    border: 2px solid #6d4300;
+    transform: scale(1.05);
+  }
+
+  #projects {
+    padding: 60px 20px;
+  }
+  
+  .project-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .project-card h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #6d4300;
+    padding: 10px;
+  }
+
+  .project-card p{
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+
+  .project-card a {
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007bff;
+  }
+
+  /* ===== EDUCATION ===== */
+
+  #education h2{
+    font-size: 40px;
+    padding: 10px 25px;
+    background-color: #6d4300;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+  }
+
+  #education h2:hover{
+    background-color: transparent;
+    color: #6d4300;
+    border: 2px solid #6d4300;
+    transform: scale(1.05);
+  }
+
+  .educat {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  
+  .educat li {
+    margin: 10px 0;
+  }
+
+  /* ===== CONTACT ===== */
+  #contact {
+    background-color: #fad96d;
+  }
+
+  #contact h2{
+    font-size: 20px;
+    background-color: #6d4300;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+
+  #contact p{
+    font-size: 1.5rem;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .content, .image {
+      width: 80%;
+    }
+  
+    nav {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
